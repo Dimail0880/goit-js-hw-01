@@ -1,16 +1,12 @@
 let input;
 let total = 0;
 
-while (true) {
+do {
     input = prompt("Введите число");
 
-    if (input === null) {
-        break;
-    }
+    let userInput = Number(input);
 
-    input = Number(input);
-
-    total += input;
-}
+    total += userInput;
+} while (input !== null);
 
 alert(`Общая сумма числел равна ${total}`);
